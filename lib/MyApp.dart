@@ -1,6 +1,6 @@
-
+import 'package:counter_app/Helpers/NavigationHelper/NavigationHelper.dart';
+import 'package:counter_app/Helpers/NavigationHelper/Routes.dart';
 import 'package:flutter/material.dart';
-import 'CounterView.dart';
 class MyApp extends StatelessWidget {
   MyApp({super.key});
   @override
@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
           colorSchemeSeed: Color(0xff0D031B)
         ),
         themeMode: ThemeMode.system,
-        home:CounterView(),
+        onGenerateRoute: AppRoute(initialPage: Pages.homeScreenConfig, initialPageData: null).onGenerateRoute,
+        // home:CounterView(),
       )
     );
   }
