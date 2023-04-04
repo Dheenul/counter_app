@@ -63,8 +63,8 @@ class _SecondPageViewState extends State<SecondPageView> {
           onPressed: () {
             _secondPageVM.navigateToPreviousPage();
           },
-          label: const Text('Next page'),
-          icon: const Icon(Icons.arrow_forward_ios),
+          label: const Text('Go Back'),
+          icon: const Icon(Icons.arrow_back_rounded),
         )
         //floatingActionButton: FloatingActionButton(onPressed: _CounterModel.counterAddFunction, child: Text("+"),),
         ));
